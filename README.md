@@ -3,16 +3,16 @@
 ## Project Overview
 It is way cheaper to keep a customer than to find a new one. In this project, I analyzed a dataset of 7000+ telecom customers in California to figure out what is driving people to cancel their services. I used SQL to clean and prep the data and Tableau to build a dashboard that shows exactly where the business is losing money.
 
+### [View Tableau Dashboard](https://public.tableau.com/app/profile/neelamrc/viz/TelcoChurnAnalysisRetentionBlueprintDecodingTelcoChurnDriversviz/Telco_Dashboard_v1) | [View SQL Scripts](https://github.com/neelam-rc/Telco_Customer_Churn_Portfolio_Project_SQL_Tableau/blob/main/Telco_Customer_Chrun_SQL_Portfolio.sql)
+
+![Dashboard Preview](https://github.com/neelam-rc/Telco_Customer_Churn_Portfolio_Project_SQL_Tableau/blob/main/Telco%20Customer%20Churn%20Tableau%20Dashboard%20Snapshot.png)
+
 ## How I Solved It
 * **Data Prep**: I handled 72 months of data in SQL Server. I used window functions and CTEs to clean up the records and grouped people into tenure segments like "0 to 6 months" and "2+ years" to see who is most likely to leave.
 
 * **Cleaning**: I fixed schema issues with billing columns (Decimal precision) and imputed missing values for new customers with 0 tenure. I also sanitized categorical data to ensure churn values were ready for analysis.
 
 * **Dashboarding**: I built a dark themed dashboard in Tableau that focuses on the big numbers: Churn Rate, Customer Lifetime Value (CLTV), and Monthly Revenue Loss.
-
-![Dashboard Preview](https://github.com/neelam-rc/Telco_Customer_Churn_Portfolio_Project_SQL_Tableau/blob/main/Telco%20Customer%20Churn%20Tableau%20Dashboard%20Snapshot.png)
-
-### [View Tableau Dashboard](https://public.tableau.com/app/profile/neelamrc/viz/TelcoChurnAnalysisRetentionBlueprintDecodingTelcoChurnDriversviz/Telco_Dashboard_v1) | [View SQL Scripts](https://github.com/neelam-rc/Telco_Customer_Churn_Portfolio_Project_SQL_Tableau/blob/main/Telco_Customer_Chrun_SQL_Portfolio.sql)
 
 ## Key Insights
 * **The Big Picture**: The churn rate is sitting at 26.5%. That means 1,869 people walked away.
